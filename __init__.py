@@ -64,8 +64,8 @@ class AlexaSkill(MycroftSkill):
 		subprocess.call(["python", "/opt/AlexaPi/src/main.py"])
 		p0.join()
 		
-		subprocess.call(["python", "-m mycroft.audio"])
-		subprocess.call(["python", "-m mycroft.client.speech"])
+		subprocess.call(["python3", "-m", "mycroft.audio"])
+		subprocess.call(["python3", "-m", "mycroft.client.speech"])
 		
 
 def create_skill():
