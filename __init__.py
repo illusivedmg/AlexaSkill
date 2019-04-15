@@ -70,8 +70,10 @@ class AlexaSkill(MycroftSkill):
 		p0.join()
 		
 		#python3 -m ${_module} $_params >> /var/log/mycroft/${1}.log 2>&1 &
-		subprocess.call(["python3", "-m", "mycroft.audio", ">>", "/var/log/mycroft/audio.log", "2>&1", "&"])
-		subprocess.call(["python3", "-m", "mycroft.client.speech", ">>", "/var/log/mycroft/voice.log", "2>&1", "&"])
+		# subprocess.call(["python3", "-m", "mycroft.audio", ">>", "/var/log/mycroft/audio.log", "2>&1", "&"])
+		os.system("python3 -m mycroft.audio >> /var/log/mycroft/audio.log 2>&1 &")
+		os.system("python3 -m mycroft.audio >> /var/log/mycroft/audio.log 2>&1 &")
+		# subprocess.call(["python3", "-m", "mycroft.client.speech", ">>", "/var/log/mycroft/voice.log", "2>&1", "&"])
 		# subprocess.call(["python3", "-m", "mycroft.client.speech", "&"]), 
 		
 
