@@ -61,7 +61,7 @@ class AlexaSkill(MycroftSkill):
 		p0 = Process(target=AlexaTimer)
 		p0.start()
 
-		subprocess.call(["python", "/opt/AlexaPi/src/main.py"])
+		subprocess.call(["python3", "/opt/AlexaPi/src/main.py"])
 		p0.join()
 		
 		#python3 -m ${_module} $_params >> /var/log/mycroft/${1}.log 2>&1 &
