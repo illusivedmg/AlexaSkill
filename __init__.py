@@ -37,7 +37,12 @@ def stopProcess(name):
 
 
 def AlexaTimer():
-	time.sleep(30)
+	print("30 seconds")
+	time.sleep(10)
+	print("20 seconds")
+	time.sleep(10)
+	print("10 seconds")
+	time.sleep(10)
 
 	stopProcess('AlexaPi')
 
